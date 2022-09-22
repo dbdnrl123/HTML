@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4_Layout</title>
+</head>
+<style>
+    #wrapper{
+        width: 800px;
+        height: auto;
+        background: #aaa;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    header{
+        width: 100%;
+        height: 120px;
+        background: #ccc;
+    }
+
+    main{
+        width: 100%;
+        height: auto;
+        background: #ccc;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    main > aside {
+        width: 220px;
+        height: 465px;
+        background: #eee;
+        float: left;
+    }
+
+    main > section {
+        float: right;
+        width: 530px;
+        height: auto;
+        background: #eee;
+        padding: 10px;   
+        box-sizing: border-box; 
+    
+    }
+
+    main > section > article{
+        width: 100%;
+        height: 200px;
+        background: #fff;
+        margin-top: 10px;
+    }
+
+    footer{
+        width: 100%;
+        height: 100px;
+        background: #ccc;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <header>
+            Header
+        </header>
+        <main>
+            <p>Main</p>
+            <aside>aside</aside>
+            <section>section
+                <article> Article #1</article>
+                <article> Article #2</article>
+            </section>
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </div>
+    
+</body>
+</html>
